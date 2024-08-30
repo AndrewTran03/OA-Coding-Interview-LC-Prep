@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext"],
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "types": ["node"]
+  },
+  "include": ["*", "src/**/*", "./env.d.ts", "config/**/*", "tests/**/*"]
+}
