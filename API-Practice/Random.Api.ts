@@ -18,16 +18,17 @@ async function practiceRESTAPIForCodingAssessments(apiUrl: string) {
             },
         });
 
-        if (!response.ok) {
+        if (!response.ok || !response.status.toString().startsWith("2")) {
             throw new Error(`Response status: ${response.status}`);
         }
 
-        const apiResponse = await response.json() as { data: APIResponse[] };
-        console.log(JSON.stringify(apiResponse.data, null, 2));
-        console.log(apiResponse.data.filter((item) => item["ID Year"] === 2018).length); 
+        const apiResponse = (await response.json() as { data: Readonly<APIResponse[]> }).data;
+        console.log(JSON.stringify(apiResponse, null, 2));
+        console.log(apiResponse.filter((item) => item["ID Year"] === 2018).length);
     }
-    catch (error) {
-        console.log("Error: ", error);
+    catch (err) {
+        const error = err as Error;
+        console.log("Error: ", error.message);
     }
 }
 
