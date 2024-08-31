@@ -13,5 +13,8 @@ public class LowestCommonAncestorOfABST0235 {
                 return root;
             }
         }
-    } 
+    }
+
+    public static void main(String[] args) {
+    }
 }
