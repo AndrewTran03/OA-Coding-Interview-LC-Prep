@@ -2,6 +2,12 @@ package NeetCode150_ProblemSolving;
 
 import java.util.*;
 
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
 public class LRUCache0146 {
     class Node {
         public int key;
@@ -65,11 +71,4 @@ public class LRUCache0146 {
             }
         }
     }
-
-    /**
-     * Your LRUCache object will be instantiated and called as such:
-     * LRUCache obj = new LRUCache(capacity);
-     * int param_1 = obj.get(key);
-     * obj.put(key,value);
-     */
 }
