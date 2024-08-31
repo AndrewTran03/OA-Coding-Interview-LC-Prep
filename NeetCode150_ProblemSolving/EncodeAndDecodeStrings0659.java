@@ -32,6 +32,5 @@ public class EncodeAndDecodeStrings0659 {
     }
 
     public static void main(String[] args) {
-
     }
 }

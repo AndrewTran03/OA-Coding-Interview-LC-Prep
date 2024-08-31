@@ -8,6 +8,7 @@ public class SingleNumberI0136 {
         }
         return result;
     }
+
     public static void main(String[] args) {
     }
 }
